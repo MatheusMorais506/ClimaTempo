@@ -1,0 +1,22 @@
+.weather-card {
+  background: linear-gradient(135deg, #3ca0ff, #7bd7f7);
+  color: #fff;
+  border-radius: 3px;
+  width: 340px;
+  height: 280px;
+  margin: 0.1rem 0rem 0.6rem 0rem;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.weather-card h2{
+  padding: 1px;
+  margin: 5px 0px 5px 0px;
+  font-size: 1.4rem;
+}
+
+.weather-card p{
+    padding: 4px;
+    margin: 0;
+    font-size: 1rem;
+}
+

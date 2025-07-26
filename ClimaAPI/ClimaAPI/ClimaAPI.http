@@ -1,0 +1,6 @@
+@ClimaAPI_HostAddress = http://localhost:5135
+
+GET {{ClimaAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

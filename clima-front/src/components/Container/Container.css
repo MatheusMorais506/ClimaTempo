@@ -1,0 +1,99 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  /* background: linear-gradient(135deg, #2193b0, #6dd5ed); */
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.search-container {
+  margin-top: 3rem;
+  flex: 0 0 auto;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: center;
+}
+
+.search-container input {
+  padding: 0.8rem;
+  font-size: 0.9rem;
+  flex: 1;
+  max-width: 255px;
+  border-radius: 4px 0px 0px 4px;
+  border: 2px solid #3ca0ff;
+  color: #3ca0ff;
+  border-right: none;
+}
+
+.search-container input::placeholder {
+  color: #3ca0ff;   
+  opacity: 1;
+}
+
+.search-container button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 0px 4px 4px 0px;
+  background: #fff;
+  border: 2px solid #3ca0ff;
+  border-left: none;
+  font-size: 0.9rem;
+  color: #3ca0ff;
+}
+
+.middle-container {
+  flex: 0 0 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+/* 🔹 Remove o outline individual */
+.search-container input:focus,
+.search-container button:focus {
+  outline: none;
+}
+
+/* 🔹 Quando qualquer filho (input ou botão) tem foco */
+.search-container:focus-within input,
+.search-container:focus-within button {
+  border-color: #257cce; /* Borda vermelha de foco */
+}
+
+.bottom-container {
+  flex: 0 0 38%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3ca0ff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
